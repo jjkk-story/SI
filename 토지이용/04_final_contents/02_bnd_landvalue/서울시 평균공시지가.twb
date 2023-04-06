@@ -1,0 +1,3043 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1203.1123                               -->
+<workbook original-version='18.1' source-build='2022.3.2 (20223.22.1203.1123)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='_16714320121140' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='jiga_gu_landuse' inline='true' name='federated.08yso8l13snfk61blk4tn1hoexml' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jiga_gu_landuse' name='textscan.0wv3v311val5dz1fctjbp1l84hsz'>
+            <connection class='textscan' directory='F:/SeoulMap2020/인턴공유/06_토지이용/02_data/02_bnd_landvalue' filename='jiga_gu_landuse.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wv3v311val5dz1fctjbp1l84hsz' name='jiga_gu_landuse.csv' table='[jiga_gu_landuse#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' date-parse-format='yyyy' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='landuse_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='integer' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wv3v311val5dz1fctjbp1l84hsz' name='jiga_gu_landuse.csv' table='[jiga_gu_landuse#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' date-parse-format='yyyy' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='landuse_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='integer' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gu_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gu_nm]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>gu_nm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>landuse_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[landuse_nm]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>landuse_nm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lot_ct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lot_ct]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>lot_ct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area_total]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>area_total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_total]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>jiga_total</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_avg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_avg]</local-name>
+            <parent-name>[jiga_gu_landuse.csv]</parent-name>
+            <remote-alias>jiga_avg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='구' datatype='string' name='[Gu Nm(복사본)_885801788553023544]' role='dimension' semantic-role='' type='nominal'>
+        <calculation class='tableau' formula='[gu_nm]' />
+      </column>
+      <column caption='상위 토지이용' datatype='string' name='[Landuse Nm (그룹)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[landuse_nm]' new-bin='true'>
+          <bin default-name='false' value='&quot;공공용지 등&quot;'>
+            <value>&quot;공원등&quot;</value>
+            <value>&quot;기타&quot;</value>
+            <value>&quot;도로등&quot;</value>
+            <value>&quot;운동장등&quot;</value>
+            <value>&quot;위험시설&quot;</value>
+            <value>&quot;유해.혐오시설&quot;</value>
+            <value>&quot;주차장등&quot;</value>
+            <value>&quot;하천등&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;공업용&quot;'>
+            <value>&quot;공업기타&quot;</value>
+            <value>&quot;공업나지&quot;</value>
+            <value>&quot;공업용&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;답&quot;'>
+            <value>&quot;답&quot;</value>
+            <value>&quot;답기타&quot;</value>
+            <value>&quot;답창고&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;상업·업무용&quot;'>
+            <value>&quot;상업기타&quot;</value>
+            <value>&quot;상업나지&quot;</value>
+            <value>&quot;상업용&quot;</value>
+            <value>&quot;업무용&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;임야&quot;'>
+            <value>&quot;임야기타&quot;</value>
+            <value>&quot;자연림&quot;</value>
+            <value>&quot;조림&quot;</value>
+            <value>&quot;토지임야&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;전&quot;'>
+            <value>&quot;과수원&quot;</value>
+            <value>&quot;전&quot;</value>
+            <value>&quot;전기타&quot;</value>
+            <value>&quot;전창고&quot;</value>
+            <value>&quot;전축사&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;주·상복합용&quot;'>
+            <value>&quot;주.상복합용&quot;</value>
+            <value>&quot;주상기타&quot;</value>
+            <value>&quot;주상나지&quot;</value>
+            <value>&quot;주상용&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;주거용&quot;'>
+            <value>&quot;다세대&quot;</value>
+            <value>&quot;단독&quot;</value>
+            <value>&quot;아파트&quot;</value>
+            <value>&quot;연립&quot;</value>
+            <value>&quot;주거기타&quot;</value>
+            <value>&quot;주거나지&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;특수토지&quot;'>
+            <value>&quot;고속도로휴게소&quot;</value>
+            <value>&quot;골프장 대중제&quot;</value>
+            <value>&quot;공항&quot;</value>
+            <value>&quot;발전소&quot;</value>
+            <value>&quot;여객자동차터미널&quot;</value>
+            <value>&quot;유원지&quot;</value>
+            <value>&quot;콘도미니엄&quot;</value>
+            <value>&quot;특수기타&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='토지이용' datatype='string' name='[Landuse Nm(복사본)_885801788552966199]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[landuse_nm]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='jiga_gu_landuse.csv' datatype='table' name='[__tableau_internal_object_id__].[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]' role='measure' type='quantitative' />
+      <column caption='Area Total' datatype='real' name='[area_total]' role='measure' type='quantitative' />
+      <column caption='Gu Nm' datatype='string' name='[gu_nm]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Jiga Avg' datatype='integer' name='[jiga_avg]' role='measure' type='quantitative' />
+      <column caption='Jiga Total' datatype='integer' name='[jiga_total]' role='measure' type='quantitative' />
+      <column caption='Landuse Nm' datatype='string' name='[landuse_nm]' role='dimension' type='nominal' />
+      <column caption='Lot Ct' datatype='integer' name='[lot_ct]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;2013&quot;' value='2013년' />
+          <alias key='&quot;2014&quot;' value='2014년' />
+          <alias key='&quot;2015&quot;' value='2015년' />
+          <alias key='&quot;2016&quot;' value='2016년' />
+          <alias key='&quot;2017&quot;' value='2017년' />
+          <alias key='&quot;2018&quot;' value='2018년' />
+          <alias key='&quot;2019&quot;' value='2019년' />
+          <alias key='&quot;2020&quot;' value='2020년' />
+          <alias key='&quot;2021&quot;' value='2021년' />
+          <alias key='&quot;2022&quot;' value='2022년' />
+        </aliases>
+      </column>
+      <column-instance column='[Gu Nm(복사본)_885801788553023544]' derivation='None' name='[none:Gu Nm(복사본)_885801788553023544:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Landuse Nm(복사본)_885801788552966199]' derivation='None' name='[none:Landuse Nm(복사본)_885801788552966199:nk]' pivot='key' type='nominal' />
+      <column-instance column='[landuse_nm]' derivation='None' name='[none:landuse_nm:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='F:/SeoulMap2020/인턴공유/06_토지이용/03_visualization/02_bnd_landvalue/jiga_gu_landuse.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/04/2023 04:36:29 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='jiga_gu_landuse' increment-value='%null%' refresh-type='create' rows-inserted='7029' timestamp-start='2023-01-04 04:36:29.487' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gu_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gu_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gu_nm</remote-alias>
+              <ordinal>1</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>landuse_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[landuse_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>landuse_nm</remote-alias>
+              <ordinal>2</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lot_ct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lot_ct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lot_ct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1579</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[area_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area_total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2983</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_total</remote-alias>
+              <ordinal>5</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7029</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_avg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_avg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>jiga_gu_landuse.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7029</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:landuse_nm:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;기타&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;자연림&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;고속도로휴게소&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;업무용&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;주차장등&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;공업용&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;위험시설&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;하천등&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;답기타&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;전축사&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;다세대&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;전&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;공원등&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;유원지&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;상업용&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;주상나지&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;골프장 대중제&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;여객자동차터미널&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;콘도미니엄&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;상업기타&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;주거나지&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;공항&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;유해.혐오시설&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;답창고&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;조림&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;도로등&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;주.상복합용&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;상업나지&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;주상기타&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;아파트&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;주상용&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;단독&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;전기타&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;과수원&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;임야기타&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;공업기타&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;연립&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;토지임야&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;발전소&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;주거기타&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;답&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;전창고&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;공업나지&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;운동장등&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;특수기타&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Landuse Nm (그룹)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;주거용&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;전&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;공업용&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;공공용지 등&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;임야&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;주·상복합용&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;답&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;상업·업무용&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;특수토지&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Landuse Nm(복사본)_885801788552966199:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;상업나지&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;임야기타&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;단독&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;운동장등&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;전창고&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;기타&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;답창고&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;주거나지&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;주상나지&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;콘도미니엄&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;상업기타&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;유원지&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;조림&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;주거기타&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;과수원&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;하천등&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;연립&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;전축사&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;주차장등&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;공업기타&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;특수기타&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;상업용&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;자연림&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;공항&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;주상기타&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;고속도로휴게소&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;공업용&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;도로등&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;전&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;공원등&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;전기타&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;골프장 대중제&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;주.상복합용&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;업무용&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;토지임야&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;다세대&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;답&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;위험시설&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;공업나지&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;발전소&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;여객자동차터미널&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;주상용&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;답기타&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;아파트&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;유해.혐오시설&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;서울특별시&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[Landuse Nm (그룹)]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;주거용&quot;</bucket>
+            <bucket>&quot;상업·업무용&quot;</bucket>
+            <bucket>&quot;주·상복합용&quot;</bucket>
+            <bucket>&quot;공업용&quot;</bucket>
+            <bucket>&quot;전&quot;</bucket>
+            <bucket>&quot;답&quot;</bucket>
+            <bucket>&quot;임야&quot;</bucket>
+            <bucket>&quot;특수토지&quot;</bucket>
+            <bucket>&quot;공공용지 등&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Gu Nm(복사본)_885801788553023544:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;종로구&quot;</bucket>
+            <bucket>&quot;중구&quot;</bucket>
+            <bucket>&quot;용산구&quot;</bucket>
+            <bucket>&quot;성동구&quot;</bucket>
+            <bucket>&quot;광진구&quot;</bucket>
+            <bucket>&quot;동대문구&quot;</bucket>
+            <bucket>&quot;중랑구&quot;</bucket>
+            <bucket>&quot;성북구&quot;</bucket>
+            <bucket>&quot;강북구&quot;</bucket>
+            <bucket>&quot;도봉구&quot;</bucket>
+            <bucket>&quot;노원구&quot;</bucket>
+            <bucket>&quot;은평구&quot;</bucket>
+            <bucket>&quot;서대문구&quot;</bucket>
+            <bucket>&quot;마포구&quot;</bucket>
+            <bucket>&quot;양천구&quot;</bucket>
+            <bucket>&quot;강서구&quot;</bucket>
+            <bucket>&quot;구로구&quot;</bucket>
+            <bucket>&quot;금천구&quot;</bucket>
+            <bucket>&quot;영등포구&quot;</bucket>
+            <bucket>&quot;동작구&quot;</bucket>
+            <bucket>&quot;관악구&quot;</bucket>
+            <bucket>&quot;서초구&quot;</bucket>
+            <bucket>&quot;강남구&quot;</bucket>
+            <bucket>&quot;송파구&quot;</bucket>
+            <bucket>&quot;강동구&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Landuse Nm(복사본)_885801788552966199:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;단독&quot;</bucket>
+            <bucket>&quot;연립&quot;</bucket>
+            <bucket>&quot;다세대&quot;</bucket>
+            <bucket>&quot;아파트&quot;</bucket>
+            <bucket>&quot;주거나지&quot;</bucket>
+            <bucket>&quot;주거기타&quot;</bucket>
+            <bucket>&quot;상업용&quot;</bucket>
+            <bucket>&quot;업무용&quot;</bucket>
+            <bucket>&quot;상업나지&quot;</bucket>
+            <bucket>&quot;상업기타&quot;</bucket>
+            <bucket>&quot;주.상복합용&quot;</bucket>
+            <bucket>&quot;주상용&quot;</bucket>
+            <bucket>&quot;주상나지&quot;</bucket>
+            <bucket>&quot;주상기타&quot;</bucket>
+            <bucket>&quot;공업용&quot;</bucket>
+            <bucket>&quot;공업나지&quot;</bucket>
+            <bucket>&quot;공업기타&quot;</bucket>
+            <bucket>&quot;전&quot;</bucket>
+            <bucket>&quot;과수원&quot;</bucket>
+            <bucket>&quot;전기타&quot;</bucket>
+            <bucket>&quot;전창고&quot;</bucket>
+            <bucket>&quot;전축사&quot;</bucket>
+            <bucket>&quot;답&quot;</bucket>
+            <bucket>&quot;답기타&quot;</bucket>
+            <bucket>&quot;답창고&quot;</bucket>
+            <bucket>&quot;조림&quot;</bucket>
+            <bucket>&quot;자연림&quot;</bucket>
+            <bucket>&quot;토지임야&quot;</bucket>
+            <bucket>&quot;임야기타&quot;</bucket>
+            <bucket>&quot;유원지&quot;</bucket>
+            <bucket>&quot;골프장 대중제&quot;</bucket>
+            <bucket>&quot;여객자동차터미널&quot;</bucket>
+            <bucket>&quot;콘도미니엄&quot;</bucket>
+            <bucket>&quot;공항&quot;</bucket>
+            <bucket>&quot;고속도로휴게소&quot;</bucket>
+            <bucket>&quot;발전소&quot;</bucket>
+            <bucket>&quot;특수기타&quot;</bucket>
+            <bucket>&quot;도로등&quot;</bucket>
+            <bucket>&quot;하천등&quot;</bucket>
+            <bucket>&quot;공원등&quot;</bucket>
+            <bucket>&quot;운동장등&quot;</bucket>
+            <bucket>&quot;주차장등&quot;</bucket>
+            <bucket>&quot;위험시설&quot;</bucket>
+            <bucket>&quot;유해.혐오시설&quot;</bucket>
+            <bucket>&quot;기타&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jiga_gu_landuse.csv' id='jiga_gu_landuse.csv_3D4F2D4B25C84BC09261B10472800FBA'>
+            <properties context=''>
+              <relation connection='textscan.0wv3v311val5dz1fctjbp1l84hsz' name='jiga_gu_landuse.csv' table='[jiga_gu_landuse#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' date-parse-format='yyyy' name='year' ordinal='0' />
+                  <column datatype='string' name='gu_nm' ordinal='1' />
+                  <column datatype='string' name='landuse_nm' ordinal='2' />
+                  <column datatype='integer' name='lot_ct' ordinal='3' />
+                  <column datatype='real' name='area_total' ordinal='4' />
+                  <column datatype='integer' name='jiga_total' ordinal='5' />
+                  <column datatype='integer' name='jiga_avg' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='jiga_gu_ldcg' inline='true' name='federated.0xz65cj0w99zxf19b50p613gw0a3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jiga_gu_ldcg' name='textscan.0ylcy4v0ao2i1s11nx2m00k2jewn'>
+            <connection class='textscan' directory='F:/SeoulMap2020/인턴공유/06_토지이용/02_data/02_bnd_landvalue' filename='jiga_gu_ldcg.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ylcy4v0ao2i1s11nx2m00k2jewn' name='jiga_gu_ldcg.csv' table='[jiga_gu_ldcg#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='ldcg_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='real' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ylcy4v0ao2i1s11nx2m00k2jewn' name='jiga_gu_ldcg.csv' table='[jiga_gu_ldcg#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='ldcg_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='real' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gu_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gu_nm]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>gu_nm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ldcg_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ldcg_nm]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>ldcg_nm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lot_ct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lot_ct]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>lot_ct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area_total]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>area_total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[jiga_total]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>jiga_total</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_avg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_avg]</local-name>
+            <parent-name>[jiga_gu_ldcg.csv]</parent-name>
+            <remote-alias>jiga_avg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='구' datatype='string' name='[Gu Nm(복사본)_885801788553437242]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[gu_nm]' />
+      </column>
+      <column caption='지목' datatype='string' name='[Ldcg Nm(복사본)_885801788553383993]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[ldcg_nm]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='jiga_gu_ldcg.csv' datatype='table' name='[__tableau_internal_object_id__].[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]' role='measure' type='quantitative' />
+      <column caption='Area Total' datatype='real' name='[area_total]' role='measure' type='quantitative' />
+      <column caption='Gu Nm' datatype='string' name='[gu_nm]' role='dimension' type='nominal' />
+      <column caption='Jiga Avg' datatype='integer' name='[jiga_avg]' role='measure' type='quantitative' />
+      <column caption='Jiga Total' datatype='real' name='[jiga_total]' role='measure' type='quantitative' />
+      <column caption='Ldcg Nm' datatype='string' name='[ldcg_nm]' role='dimension' type='nominal' />
+      <column caption='Lot Ct' datatype='integer' name='[lot_ct]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;2013&quot;' value='2013년' />
+          <alias key='&quot;2014&quot;' value='2014년' />
+          <alias key='&quot;2015&quot;' value='2015년' />
+          <alias key='&quot;2016&quot;' value='2016년' />
+          <alias key='&quot;2017&quot;' value='2017년' />
+          <alias key='&quot;2018&quot;' value='2018년' />
+          <alias key='&quot;2019&quot;' value='2019년' />
+          <alias key='&quot;2020&quot;' value='2020년' />
+          <alias key='&quot;2021&quot;' value='2021년' />
+          <alias key='&quot;2022&quot;' value='2022년' />
+        </aliases>
+      </column>
+      <column-instance column='[Gu Nm(복사본)_885801788553437242]' derivation='None' name='[none:Gu Nm(복사본)_885801788553437242:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Ldcg Nm(복사본)_885801788553383993]' derivation='None' name='[none:Ldcg Nm(복사본)_885801788553383993:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ldcg_nm]' derivation='None' name='[none:ldcg_nm:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='F:/SeoulMap2020/인턴공유/06_토지이용/03_visualization/02_bnd_landvalue/jiga_gu_ldcg.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/04/2023 04:29:36 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='jiga_gu_ldcg' increment-value='%null%' refresh-type='create' rows-inserted='5086' timestamp-start='2023-01-04 04:29:35.482' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gu_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gu_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gu_nm</remote-alias>
+              <ordinal>1</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ldcg_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ldcg_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ldcg_nm</remote-alias>
+              <ordinal>2</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lot_ct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lot_ct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lot_ct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>838</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[area_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area_total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1965</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[jiga_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_total</remote-alias>
+              <ordinal>5</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5086</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_avg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_avg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>jiga_gu_ldcg.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5086</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ldcg_nm:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;묘지&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;공원&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;주차장&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;답&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;하천&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;유원지&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;사적지&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;대&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;학교용지&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;종교용지&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;공장용지&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;창고용지&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;전&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;도로&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;유지&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;임야&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;제방&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;주유소용지&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;수도용지&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;목장용지&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;과수원&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;철도용지&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;잡종지&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;염전&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;구거&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;체육용지&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Ldcg Nm(복사본)_885801788553383993:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;학교용지&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;전&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;체육용지&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;묘지&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;임야&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;도로&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;주차장&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;염전&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;잡종지&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;수도용지&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;답&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;유원지&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;구거&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;대&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;철도용지&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;제방&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;유지&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;공원&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;주유소용지&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;공장용지&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;과수원&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;종교용지&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;하천&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;창고용지&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;목장용지&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;사적지&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Gu Nm(복사본)_885801788553437242:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;종로구&quot;</bucket>
+            <bucket>&quot;중구&quot;</bucket>
+            <bucket>&quot;용산구&quot;</bucket>
+            <bucket>&quot;성동구&quot;</bucket>
+            <bucket>&quot;광진구&quot;</bucket>
+            <bucket>&quot;동대문구&quot;</bucket>
+            <bucket>&quot;중랑구&quot;</bucket>
+            <bucket>&quot;성북구&quot;</bucket>
+            <bucket>&quot;강북구&quot;</bucket>
+            <bucket>&quot;도봉구&quot;</bucket>
+            <bucket>&quot;노원구&quot;</bucket>
+            <bucket>&quot;은평구&quot;</bucket>
+            <bucket>&quot;서대문구&quot;</bucket>
+            <bucket>&quot;마포구&quot;</bucket>
+            <bucket>&quot;양천구&quot;</bucket>
+            <bucket>&quot;강서구&quot;</bucket>
+            <bucket>&quot;구로구&quot;</bucket>
+            <bucket>&quot;금천구&quot;</bucket>
+            <bucket>&quot;영등포구&quot;</bucket>
+            <bucket>&quot;동작구&quot;</bucket>
+            <bucket>&quot;관악구&quot;</bucket>
+            <bucket>&quot;서초구&quot;</bucket>
+            <bucket>&quot;강남구&quot;</bucket>
+            <bucket>&quot;송파구&quot;</bucket>
+            <bucket>&quot;강동구&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Ldcg Nm(복사본)_885801788553383993:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;전&quot;</bucket>
+            <bucket>&quot;답&quot;</bucket>
+            <bucket>&quot;과수원&quot;</bucket>
+            <bucket>&quot;목장용지&quot;</bucket>
+            <bucket>&quot;임야&quot;</bucket>
+            <bucket>&quot;염전&quot;</bucket>
+            <bucket>&quot;대&quot;</bucket>
+            <bucket>&quot;공장용지&quot;</bucket>
+            <bucket>&quot;학교용지&quot;</bucket>
+            <bucket>&quot;주차장&quot;</bucket>
+            <bucket>&quot;주유소용지&quot;</bucket>
+            <bucket>&quot;창고용지&quot;</bucket>
+            <bucket>&quot;도로&quot;</bucket>
+            <bucket>&quot;철도용지&quot;</bucket>
+            <bucket>&quot;제방&quot;</bucket>
+            <bucket>&quot;하천&quot;</bucket>
+            <bucket>&quot;구거&quot;</bucket>
+            <bucket>&quot;유지&quot;</bucket>
+            <bucket>&quot;수도용지&quot;</bucket>
+            <bucket>&quot;공원&quot;</bucket>
+            <bucket>&quot;체육용지&quot;</bucket>
+            <bucket>&quot;유원지&quot;</bucket>
+            <bucket>&quot;종교용지&quot;</bucket>
+            <bucket>&quot;사적지&quot;</bucket>
+            <bucket>&quot;묘지&quot;</bucket>
+            <bucket>&quot;잡종지&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jiga_gu_ldcg.csv' id='jiga_gu_ldcg.csv_959F70813FD3467986B385430C0CF126'>
+            <properties context=''>
+              <relation connection='textscan.0ylcy4v0ao2i1s11nx2m00k2jewn' name='jiga_gu_ldcg.csv' table='[jiga_gu_ldcg#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='year' ordinal='0' />
+                  <column datatype='string' name='gu_nm' ordinal='1' />
+                  <column datatype='string' name='ldcg_nm' ordinal='2' />
+                  <column datatype='integer' name='lot_ct' ordinal='3' />
+                  <column datatype='real' name='area_total' ordinal='4' />
+                  <column datatype='real' name='jiga_total' ordinal='5' />
+                  <column datatype='integer' name='jiga_avg' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='jiga_gu_prps' inline='true' name='federated.131mukh0twq31l10izshg1om6trx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jiga_gu_prps' name='textscan.0hh0rdr04xqltk17ln7pk183dkka'>
+            <connection class='textscan' directory='F:/SeoulMap2020/인턴공유/06_토지이용/02_data/02_bnd_landvalue' filename='jiga_gu_prps.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0hh0rdr04xqltk17ln7pk183dkka' name='jiga_gu_prps.csv' table='[jiga_gu_prps#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='prps_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='integer' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0hh0rdr04xqltk17ln7pk183dkka' name='jiga_gu_prps.csv' table='[jiga_gu_prps#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='string' name='prps_nm' ordinal='2' />
+            <column datatype='integer' name='lot_ct' ordinal='3' />
+            <column datatype='real' name='area_total' ordinal='4' />
+            <column datatype='integer' name='jiga_total' ordinal='5' />
+            <column datatype='integer' name='jiga_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gu_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gu_nm]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>gu_nm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prps_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prps_nm]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>prps_nm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lot_ct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lot_ct]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>lot_ct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area_total]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>area_total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_total]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>jiga_total</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_avg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_avg]</local-name>
+            <parent-name>[jiga_gu_prps.csv]</parent-name>
+            <remote-alias>jiga_avg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='구' datatype='string' name='[Gu Nm(복사본)_885801788552585269]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[gu_nm]' />
+      </column>
+      <column caption='상위 용도지역' datatype='string' name='[Prps Nm (그룹)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[prps_nm]' new-bin='true'>
+          <bin default-name='false' value='&quot;공업지역&quot;'>
+            <value>&quot;준공업지역&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;녹지지역&quot;'>
+            <value>&quot;보전녹지지역&quot;</value>
+            <value>&quot;생산녹지지역&quot;</value>
+            <value>&quot;자연녹지지역&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;상업지역&quot;'>
+            <value>&quot;근린상업지역&quot;</value>
+            <value>&quot;유통상업지역&quot;</value>
+            <value>&quot;일반상업지역&quot;</value>
+            <value>&quot;중심상업지역&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;주거지역&quot;'>
+            <value>&quot;제1종일반주거지역&quot;</value>
+            <value>&quot;제1종전용주거지역&quot;</value>
+            <value>&quot;제2종일반주거지역&quot;</value>
+            <value>&quot;제2종전용주거지역&quot;</value>
+            <value>&quot;제3종일반주거지역&quot;</value>
+            <value>&quot;준주거지역&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='용도지역' datatype='string' name='[Prps Nm(복사본)_885801788552257588]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[prps_nm]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='jiga_gu_prps.csv' datatype='table' name='[__tableau_internal_object_id__].[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]' role='measure' type='quantitative' />
+      <column caption='Area Total' datatype='real' name='[area_total]' role='measure' type='quantitative' />
+      <column caption='Gu Nm' datatype='string' name='[gu_nm]' role='dimension' type='nominal' />
+      <column caption='Jiga Avg' datatype='integer' name='[jiga_avg]' role='measure' type='quantitative' />
+      <column caption='Jiga Total' datatype='integer' name='[jiga_total]' role='measure' type='quantitative' />
+      <column caption='Lot Ct' datatype='integer' name='[lot_ct]' role='measure' type='quantitative' />
+      <column caption='Prps Nm' datatype='string' name='[prps_nm]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;2013&quot;' value='2013년' />
+          <alias key='&quot;2014&quot;' value='2014년' />
+          <alias key='&quot;2015&quot;' value='2015년' />
+          <alias key='&quot;2016&quot;' value='2016년' />
+          <alias key='&quot;2017&quot;' value='2017년' />
+          <alias key='&quot;2018&quot;' value='2018년' />
+          <alias key='&quot;2019&quot;' value='2019년' />
+          <alias key='&quot;2020&quot;' value='2020년' />
+          <alias key='&quot;2021&quot;' value='2021년' />
+          <alias key='&quot;2022&quot;' value='2022년' />
+        </aliases>
+      </column>
+      <column-instance column='[Gu Nm(복사본)_885801788552585269]' derivation='None' name='[none:Gu Nm(복사본)_885801788552585269:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Prps Nm(복사본)_885801788552257588]' derivation='None' name='[none:Prps Nm(복사본)_885801788552257588:nk]' pivot='key' type='nominal' />
+      <column-instance column='[prps_nm]' derivation='None' name='[none:prps_nm:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='F:/SeoulMap2020/인턴공유/06_토지이용/03_visualization/02_bnd_landvalue/jiga_gu_prps.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/04/2023 04:30:24 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='jiga_gu_prps' increment-value='%null%' refresh-type='create' rows-inserted='2172' timestamp-start='2023-01-04 04:30:23.472' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gu_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gu_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gu_nm</remote-alias>
+              <ordinal>1</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prps_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[prps_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prps_nm</remote-alias>
+              <ordinal>2</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lot_ct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lot_ct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lot_ct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1215</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[area_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area_total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1337</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_total</remote-alias>
+              <ordinal>5</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2172</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_avg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_avg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>jiga_gu_prps.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2172</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:prps_nm:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;제1종전용주거지역&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;개발제한구역&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;유통상업지역&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;준공업지역&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;제2종일반주거지역&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;일반상업지역&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;근린상업지역&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;자연녹지지역&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;준주거지역&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;중심상업지역&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;제2종전용주거지역&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;제1종일반주거지역&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;보전녹지지역&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;제3종일반주거지역&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;생산녹지지역&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Prps Nm (그룹)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;개발제한구역&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;주거지역&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;상업지역&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;녹지지역&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;공업지역&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Prps Nm(복사본)_885801788552257588:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;근린상업지역&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;제1종전용주거지역&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;제3종일반주거지역&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;생산녹지지역&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;유통상업지역&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;준주거지역&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;제2종전용주거지역&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;중심상업지역&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;자연녹지지역&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;개발제한구역&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;준공업지역&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;일반상업지역&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;제1종일반주거지역&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;보전녹지지역&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;제2종일반주거지역&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[Prps Nm (그룹)]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;주거지역&quot;</bucket>
+            <bucket>&quot;상업지역&quot;</bucket>
+            <bucket>&quot;공업지역&quot;</bucket>
+            <bucket>&quot;녹지지역&quot;</bucket>
+            <bucket>&quot;개발제한구역&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Gu Nm(복사본)_885801788552585269:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;종로구&quot;</bucket>
+            <bucket>&quot;중구&quot;</bucket>
+            <bucket>&quot;용산구&quot;</bucket>
+            <bucket>&quot;성동구&quot;</bucket>
+            <bucket>&quot;광진구&quot;</bucket>
+            <bucket>&quot;동대문구&quot;</bucket>
+            <bucket>&quot;중랑구&quot;</bucket>
+            <bucket>&quot;성북구&quot;</bucket>
+            <bucket>&quot;강북구&quot;</bucket>
+            <bucket>&quot;도봉구&quot;</bucket>
+            <bucket>&quot;노원구&quot;</bucket>
+            <bucket>&quot;은평구&quot;</bucket>
+            <bucket>&quot;서대문구&quot;</bucket>
+            <bucket>&quot;마포구&quot;</bucket>
+            <bucket>&quot;양천구&quot;</bucket>
+            <bucket>&quot;강서구&quot;</bucket>
+            <bucket>&quot;구로구&quot;</bucket>
+            <bucket>&quot;금천구&quot;</bucket>
+            <bucket>&quot;영등포구&quot;</bucket>
+            <bucket>&quot;동작구&quot;</bucket>
+            <bucket>&quot;관악구&quot;</bucket>
+            <bucket>&quot;서초구&quot;</bucket>
+            <bucket>&quot;강남구&quot;</bucket>
+            <bucket>&quot;송파구&quot;</bucket>
+            <bucket>&quot;강동구&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Prps Nm(복사본)_885801788552257588:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;제1종전용주거지역&quot;</bucket>
+            <bucket>&quot;제2종전용주거지역&quot;</bucket>
+            <bucket>&quot;제1종일반주거지역&quot;</bucket>
+            <bucket>&quot;제2종일반주거지역&quot;</bucket>
+            <bucket>&quot;제3종일반주거지역&quot;</bucket>
+            <bucket>&quot;준주거지역&quot;</bucket>
+            <bucket>&quot;중심상업지역&quot;</bucket>
+            <bucket>&quot;일반상업지역&quot;</bucket>
+            <bucket>&quot;근린상업지역&quot;</bucket>
+            <bucket>&quot;유통상업지역&quot;</bucket>
+            <bucket>&quot;준공업지역&quot;</bucket>
+            <bucket>&quot;보전녹지지역&quot;</bucket>
+            <bucket>&quot;생산녹지지역&quot;</bucket>
+            <bucket>&quot;자연녹지지역&quot;</bucket>
+            <bucket>&quot;개발제한구역&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jiga_gu_prps.csv' id='jiga_gu_prps.csv_B3A461FE3FC545F8AC2701C2932ED286'>
+            <properties context=''>
+              <relation connection='textscan.0hh0rdr04xqltk17ln7pk183dkka' name='jiga_gu_prps.csv' table='[jiga_gu_prps#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='year' ordinal='0' />
+                  <column datatype='string' name='gu_nm' ordinal='1' />
+                  <column datatype='string' name='prps_nm' ordinal='2' />
+                  <column datatype='integer' name='lot_ct' ordinal='3' />
+                  <column datatype='real' name='area_total' ordinal='4' />
+                  <column datatype='integer' name='jiga_total' ordinal='5' />
+                  <column datatype='integer' name='jiga_avg' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='jiga_gu' inline='true' name='federated.19zeqwl1w7mxlj19mszz60z0kcck' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jiga_gu' name='textscan.0d21ai71e0wm8m113v1u80gzrjc7'>
+            <connection class='textscan' directory='F:/SeoulMap2020/인턴공유/06_토지이용/02_data/02_bnd_landvalue' filename='jiga_gu.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0d21ai71e0wm8m113v1u80gzrjc7' name='jiga_gu.csv' table='[jiga_gu#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='integer' name='lot_ct' ordinal='2' />
+            <column datatype='real' name='area_total' ordinal='3' />
+            <column datatype='integer' name='jiga_total' ordinal='4' />
+            <column datatype='integer' name='jiga_avg' ordinal='5' />
+            <column datatype='integer' name='jiga_year_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0d21ai71e0wm8m113v1u80gzrjc7' name='jiga_gu.csv' table='[jiga_gu#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='gu_nm' ordinal='1' />
+            <column datatype='integer' name='lot_ct' ordinal='2' />
+            <column datatype='real' name='area_total' ordinal='3' />
+            <column datatype='integer' name='jiga_total' ordinal='4' />
+            <column datatype='integer' name='jiga_avg' ordinal='5' />
+            <column datatype='integer' name='jiga_year_avg' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gu_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gu_nm]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>gu_nm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lot_ct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lot_ct]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>lot_ct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[area_total]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>area_total</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_total]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>jiga_total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_avg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_avg]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>jiga_avg</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jiga_year_avg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jiga_year_avg]</local-name>
+            <parent-name>[jiga_gu.csv]</parent-name>
+            <remote-alias>jiga_year_avg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_avg:qk]&quot;' value='구별 평균공시지가' />
+          <alias key='&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]&quot;' value='서울시 평균공시지가' />
+        </aliases>
+      </column>
+      <column caption='Avg Jiga' datatype='real' name='[Calculation_885801788218011673]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [year] : (SUM([jiga_total])/SUM([area_total]))}' />
+      </column>
+      <column caption='구' datatype='string' name='[Gu Nm(복사본)_885801788552044595]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+        <calculation class='tableau' formula='[gu_nm]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='jiga_gu.csv' datatype='table' name='[__tableau_internal_object_id__].[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]' role='measure' type='quantitative' />
+      <column caption='Area Total' datatype='real' name='[area_total]' role='measure' type='quantitative' />
+      <column caption='Gu Nm' datatype='string' name='[gu_nm]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Jiga Avg' datatype='integer' name='[jiga_avg]' role='measure' type='quantitative' />
+      <column caption='Jiga Total' datatype='integer' name='[jiga_total]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[jiga_year_avg]' role='measure' type='quantitative' />
+      <column caption='Lot Ct' datatype='integer' name='[lot_ct]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative'>
+        <aliases>
+          <alias key='2013' value='2013년' />
+          <alias key='2014' value='2014년' />
+          <alias key='2015' value='2015년' />
+          <alias key='2016' value='2016년' />
+          <alias key='2017' value='2017년' />
+          <alias key='2018' value='2018년' />
+          <alias key='2019' value='2019년' />
+          <alias key='2020' value='2020년' />
+          <alias key='2021' value='2021년' />
+          <alias key='2022' value='2022년' />
+        </aliases>
+      </column>
+      <column-instance column='[jiga_avg]' derivation='Attribute' name='[attr:jiga_avg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jiga_year_avg]' derivation='Attribute' name='[attr:jiga_year_avg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gu Nm(복사본)_885801788552044595]' derivation='None' name='[none:Gu Nm(복사본)_885801788552044595:nk]' pivot='key' type='nominal' />
+      <column-instance column='[gu_nm]' derivation='None' name='[none:gu_nm:nk]' pivot='key' type='nominal' />
+      <column-instance column='[jiga_avg]' derivation='None' name='[none:jiga_avg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jiga_year_avg]' derivation='Attribute' name='[pcdf:attr:jiga_year_avg:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[jiga_year_avg]' derivation='Sum' name='[pcdf:sum:jiga_year_avg:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_885801788218011673]' derivation='Sum' name='[pcto:sum:Calculation_885801788218011673:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_885801788218011673]' derivation='Sum' name='[sum:Calculation_885801788218011673:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jiga_avg]' derivation='Sum' name='[sum:jiga_avg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jiga_total]' derivation='Sum' name='[sum:jiga_total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jiga_year_avg]' derivation='Sum' name='[sum:jiga_year_avg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lot_ct]' derivation='Sum' name='[sum:lot_ct:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='F:/SeoulMap2020/인턴공유/06_토지이용/03_visualization/02_bnd_landvalue/jiga_gu.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/04/2023 04:29:23 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='jiga_gu' increment-value='%null%' refresh-type='create' rows-inserted='250' timestamp-start='2023-01-04 04:29:22.950' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gu_nm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gu_nm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gu_nm</remote-alias>
+              <ordinal>1</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lot_ct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lot_ct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lot_ct</remote-alias>
+              <ordinal>2</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[area_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area_total</remote-alias>
+              <ordinal>3</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>249</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_avg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_avg</remote-alias>
+              <ordinal>5</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jiga_year_avg</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jiga_year_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jiga_year_avg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>jiga_gu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:jiga_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcto:sum:Calculation_885801788218011673:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:Calculation_885801788218011673:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:Calculation_885801788221321246:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:Calculation_885801788221534239:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:jiga_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788209426441:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:sum:jiga_year_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:jiga_year_avg:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[diff:sum:jiga_total:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:jiga_total:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788205219842:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788206731267:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788206784516:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788225093664:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788225335329:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[usr:Calculation_885801788261965858:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.19zeqwl1w7mxlj19mszz60z0kcck].[sum:lot_ct:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;서울특별시&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Gu Nm(복사본)_885801788552044595:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;종로구&quot;</bucket>
+            <bucket>&quot;중구&quot;</bucket>
+            <bucket>&quot;용산구&quot;</bucket>
+            <bucket>&quot;성동구&quot;</bucket>
+            <bucket>&quot;광진구&quot;</bucket>
+            <bucket>&quot;동대문구&quot;</bucket>
+            <bucket>&quot;중랑구&quot;</bucket>
+            <bucket>&quot;성북구&quot;</bucket>
+            <bucket>&quot;강북구&quot;</bucket>
+            <bucket>&quot;도봉구&quot;</bucket>
+            <bucket>&quot;노원구&quot;</bucket>
+            <bucket>&quot;은평구&quot;</bucket>
+            <bucket>&quot;서대문구&quot;</bucket>
+            <bucket>&quot;마포구&quot;</bucket>
+            <bucket>&quot;양천구&quot;</bucket>
+            <bucket>&quot;강서구&quot;</bucket>
+            <bucket>&quot;구로구&quot;</bucket>
+            <bucket>&quot;금천구&quot;</bucket>
+            <bucket>&quot;영등포구&quot;</bucket>
+            <bucket>&quot;동작구&quot;</bucket>
+            <bucket>&quot;관악구&quot;</bucket>
+            <bucket>&quot;서초구&quot;</bucket>
+            <bucket>&quot;강남구&quot;</bucket>
+            <bucket>&quot;송파구&quot;</bucket>
+            <bucket>&quot;강동구&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:gu_nm:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;종로구&quot;</bucket>
+            <bucket>&quot;중구&quot;</bucket>
+            <bucket>&quot;용산구&quot;</bucket>
+            <bucket>&quot;성동구&quot;</bucket>
+            <bucket>&quot;광진구&quot;</bucket>
+            <bucket>&quot;동대문구&quot;</bucket>
+            <bucket>&quot;중랑구&quot;</bucket>
+            <bucket>&quot;성북구&quot;</bucket>
+            <bucket>&quot;강북구&quot;</bucket>
+            <bucket>&quot;도봉구&quot;</bucket>
+            <bucket>&quot;노원구&quot;</bucket>
+            <bucket>&quot;은평구&quot;</bucket>
+            <bucket>&quot;서대문구&quot;</bucket>
+            <bucket>&quot;마포구&quot;</bucket>
+            <bucket>&quot;양천구&quot;</bucket>
+            <bucket>&quot;강서구&quot;</bucket>
+            <bucket>&quot;구로구&quot;</bucket>
+            <bucket>&quot;금천구&quot;</bucket>
+            <bucket>&quot;영등포구&quot;</bucket>
+            <bucket>&quot;동작구&quot;</bucket>
+            <bucket>&quot;관악구&quot;</bucket>
+            <bucket>&quot;서초구&quot;</bucket>
+            <bucket>&quot;강남구&quot;</bucket>
+            <bucket>&quot;송파구&quot;</bucket>
+            <bucket>&quot;강동구&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jiga_gu.csv' id='jiga_gu.csv_A2AED6A20B3047CC862D595F697B24F3'>
+            <properties context=''>
+              <relation connection='textscan.0d21ai71e0wm8m113v1u80gzrjc7' name='jiga_gu.csv' table='[jiga_gu#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='gu_nm' ordinal='1' />
+                  <column datatype='integer' name='lot_ct' ordinal='2' />
+                  <column datatype='real' name='area_total' ordinal='3' />
+                  <column datatype='integer' name='jiga_total' ordinal='4' />
+                  <column datatype='integer' name='jiga_avg' ordinal='5' />
+                  <column datatype='integer' name='jiga_year_avg' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='서울시 평균공시지가'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='jiga_gu' name='federated.19zeqwl1w7mxlj19mszz60z0kcck' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19zeqwl1w7mxlj19mszz60z0kcck'>
+            <column-instance column='[jiga_year_avg]' derivation='Attribute' name='[attr:jiga_year_avg:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[jiga_year_avg]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative'>
+              <aliases>
+                <alias key='2013' value='2013년' />
+                <alias key='2014' value='2014년' />
+                <alias key='2015' value='2015년' />
+                <alias key='2016' value='2016년' />
+                <alias key='2017' value='2017년' />
+                <alias key='2018' value='2018년' />
+                <alias key='2019' value='2019년' />
+                <alias key='2020' value='2020년' />
+                <alias key='2021' value='2021년' />
+                <alias key='2022' value='2022년' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]' scope='rows' value='평균공시지가' />
+            <format attr='title' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]' scope='rows' value='false' />
+            <format attr='subtitle' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]' scope='rows' value='단위 : 원/㎡' />
+            <format attr='height' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]' value='20' />
+            <format attr='width' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]' value='72' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[연도 : <[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[평균공시지가 : <[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[attr:jiga_year_avg:qk]</rows>
+        <cols>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{3F65EFDF-6325-4273-9006-4B5FB4334376}' />
+    </worksheet>
+    <worksheet name='서울시 평균공시지가 변동률'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;</run>
+            <run bold='true' fontalignment='1'>Sheet Name</run>
+            <run bold='true' fontalignment='1'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='jiga_gu' name='federated.19zeqwl1w7mxlj19mszz60z0kcck' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19zeqwl1w7mxlj19mszz60z0kcck'>
+            <column datatype='integer' name='[jiga_year_avg]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jiga_year_avg]' derivation='Attribute' name='[pcdf:attr:jiga_year_avg:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative'>
+              <aliases>
+                <alias key='2013' value='2013년' />
+                <alias key='2014' value='2014년' />
+                <alias key='2015' value='2015년' />
+                <alias key='2016' value='2016년' />
+                <alias key='2017' value='2017년' />
+                <alias key='2018' value='2018년' />
+                <alias key='2019' value='2019년' />
+                <alias key='2020' value='2020년' />
+                <alias key='2021' value='2021년' />
+                <alias key='2022' value='2022년' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' scope='rows' value='평균공시지가 변동률' />
+            <format attr='auto-subtitle' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' scope='rows' value='false' />
+            <format attr='subtitle' class='0' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' scope='rows' value='단위 : %' />
+            <format attr='height' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]' value='20' />
+            <format attr='width' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' value='60' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'><![CDATA[연도 : <[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[변동률 : <[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#818b91' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[pcdf:attr:jiga_year_avg:qk]</rows>
+        <cols>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{0A6B8030-74C6-40F1-A904-CF2272E0CA27}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='서울시 공시지가 변동률'>
+      <style />
+      <size maxheight='600' maxwidth='1100' minheight='600' minwidth='1100' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97334' id='3' name='서울시 평균공시지가' w='49273' x='727' y='1333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='97334' id='5' name='서울시 평균공시지가 변동률' w='49273' x='50000' y='1333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='48' param='vert' type-v2='layout-flow' w='98546' x='727' y='1333'>
+                <zone fixed-size='280' h='97334' id='3' is-fixed='true' name='서울시 평균공시지가' w='49273' x='727' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97334' id='5' is-fixed='true' name='서울시 평균공시지가 변동률' w='49273' x='50000' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{03232B9D-5A0D-47A2-AD10-2A1F94F1FC9F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='서울시 평균공시지가'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2C3F5869-2718-4CF2-BE59-F8C491A5396B}' />
+    </window>
+    <window class='worksheet' name='서울시 평균공시지가 변동률'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19zeqwl1w7mxlj19mszz60z0kcck].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2B77B99D-139C-40CC-AF68-58DF9E825ACC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='서울시 공시지가 변동률'>
+      <viewpoints>
+        <viewpoint name='서울시 평균공시지가'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='서울시 평균공시지가 변동률'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{927AECC5-53D5-4073-ADFD-FAEBAC38F5FD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='서울시 공시지가 변동률' width='192'>
+      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
+      xjR60UNsAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='서울시 평균공시지가' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='서울시 평균공시지가 변동률' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
