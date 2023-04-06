@@ -1,0 +1,208 @@
+
+<html>
+<head>
+    <title>서울연구데이터</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://data.si.re.kr/R/css/sichart.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+        window.onresize = function() {
+            drawVisualization();
+        };
+        window.onload = function(){
+            if(window.innerHeight < window.innerWidth){
+            	$("#chart0_div").height(window.innerHeight - 10);
+            }else{
+                $("#chart0_div").height(window.innerHeight - 14);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+ 
+        <!-- Content -->
+        <div id="main-content" class="content">
+            <div id="dashboard0_div">
+                <div id="filter0_div" class="filter_div" style="display: none;"></div>
+                <div id="chart0_div" style="width: 100%; height: 80vh; float: left;"></div>
+            </div>
+        </div>  
+<script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart", "controls", "table"]});
+        google.setOnLoadCallback(drawVisualization);
+
+        //////////////////// data ///////////////////////////////////////////
+
+ 
+var colName0 =  ["c2","1.월요일","2.화요일","3.수요일","4.목요일","5.금요일","6.토요일","7.일요일"] 
+var dataRaw0 =  [[2004,20.4,20.6,20.6,20.6,20.2,20.4,24.4],[2005,20.9,21,21,21.1,20.4,21,24.7],[2006,20.8,20.8,20.9,20.8,20.3,20.8,24.5],[2007,21,21,21.1,21,20.5,21.1,24.8],[2008,22.2,22.1,22,22,21.6,22.3,25.6],[2009,22,22.1,22,21.8,21.4,22,25.7],[2010,21.7,21.6,21.6,21.7,21.1,21.8,25.3],[2013,26.2,25.9,26.1,26.1,25.4,26,29.4],[2014,25.6,25.3,25.2,25.3,24.5,25.3,29.1],[2015,24.9,24.7,24.7,24.5,24,25,28.9],[2016,23.9,23.5,23.7,23.5,23.1,24.1,27.3],[2017,23.9,23.8,23.6,23.6,23.2,24,27.2],[2018,23.5,23.4,23.5,23.3,22.7,23.9,27],[2019,23.4,23.1,23.2,23.3,22.6,24,26.6],[2020,23.5,23.3,23.5,23.4,23.1,24.8,27.4],[2021,22.8,22.2,22.4,22.3,21.9,23.4,26]] 
+var filterLabel = "c2";
+var webFolder = "trfc_dow_spd_line";
+var chartTitle = "서울시 요일별 통행속도";
+var colorSet = ["#A44A3F","#F19C79","#F6F4D2","#CBDFBD","#ADC178","#A98467","#6C584C"];
+var fontSize0 = 10;
+var fontColor0 = "#999999";
+var bStacked = false;
+var barWidth = "80%";
+var aniChartType = "h";
+var axTitle = "(km/h)";
+var isTotal = "F";
+var ptSize = 8;
+var lnWidth = 3;
+var gridN = 0;
+var max0 = 29.4;
+var min0 = 0; 
+
+        //////////////////// chart //////////////////////////////////////////
+
+
+
+        var fontName0 = "Noto Sans KR";
+        var textStyle0 = {
+            fontName: fontName0,
+            fontSize: fontSize0,
+            color: fontColor0
+        };
+        var textStyleLegend = {
+            fontName: fontName0,
+            fontSize: 12,
+            color: "#404c6a"
+        };
+
+
+
+        var dataArr0 = [];
+        dataArr0.push(colName0);
+        for (var i in dataRaw0) {
+            dataArr0.push(dataRaw0[i]);
+        }
+
+
+        if (isTotal == "T"){
+            var dataArr1a = [];
+            dataArr1a.push(colName1a);
+            for (var i in dataRaw1a) {
+                dataArr1a.push(dataRaw1a[i]);
+            }
+            var dataArr2a = [];
+            dataArr2a.push(colName2a);
+            for (var i in dataRaw2a) {
+                dataArr2a.push(dataRaw2a[i]);
+            }
+        }
+
+
+
+        function drawVisualization() {
+            drawChartRegion(dataArr0, min0, max0);
+
+        }
+
+        function drawChartRegion(regionData, amin, amax) {
+            var yearPattern = "####";
+            var formatNumber = new google.visualization.NumberFormat({
+                pattern: yearPattern
+            });
+
+
+
+            var data = google.visualization.arrayToDataTable(regionData);
+
+
+            formatNumber.format(data, 0);
+
+            var dashboard0 = new google.visualization.Dashboard(document.getElementById("dashboard0_div"));
+
+            var options0 = {
+                chartArea: {
+                    width: "85%",
+                    height: "90%"
+                },
+                colors: colorSet,
+                focusTarget : "category",
+                hAxes: {
+                	0:{
+	                    textStyle: textStyle0,
+	                    format: "####",
+	                    //gridlines: { color: "#eee", count: gridN }
+	                }
+                },
+                vAxis: {
+                    textStyle: textStyle0,
+                    title: axTitle,
+                    titleTextStyle: textStyleLegend,
+                },
+                legend: {
+                    textStyle: textStyleLegend,
+                    position: "top"
+                },
+                tooltip: {
+                    textStyle: textStyleLegend
+                },
+                pointSize: ptSize,
+                lineWidth: lnWidth,
+                series: {
+                    0: { pointShape: "circle" },
+                },
+                animation: {
+                    duration: 500,
+                    easing: "out"
+                },
+
+            };
+
+            var chart0 = new google.visualization.ChartWrapper({
+                "chartType": "LineChart",
+                "containerId": "chart0_div",
+                "options": options0
+            });
+
+            var filter0 = new google.visualization.ControlWrapper({
+                "controlType": "CategoryFilter",
+                "containerId": "filter0_div",
+                "options": {
+                    "filterColumnLabel": filterLabel
+                }
+            })
+
+
+
+            //////////////////////////////////////////////////
+            //////////////////// series //////////////////////
+            //////////////////////////////////////////////////
+            var view = new google.visualization.DataView(data);
+            //legend click
+            var colu = [];
+            var series = {};
+            for (var i = 0; i < data.getNumberOfColumns(); i++) {
+                colu.push(i);
+                if (i > 0) {
+                    series[i - 1] = {};
+                }
+            }
+
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+            dashboard0.bind(filter0, [chart0]);
+            dashboard0.draw(view);
+
+
+
+        }
+
+
+
+
+</script>
+ 
+</body>
+</html>
+
+
