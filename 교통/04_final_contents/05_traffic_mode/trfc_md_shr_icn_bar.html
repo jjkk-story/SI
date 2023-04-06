@@ -1,0 +1,256 @@
+
+<html>
+<head>
+    <title>서울연구데이터</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://data.si.re.kr/R/css/sichart.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+        window.onresize = function() {
+            drawVisualization();
+        };
+        window.onload = function(){
+            if(window.innerHeight < window.innerWidth){
+            	$("#chart0_div").height(window.innerHeight - 10);
+            }else{
+                $("#chart0_div").height(window.innerHeight - 14);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+ 
+        <!-- Content -->
+        <div id="main-content" class="content">
+            <div id="dashboard0_div">
+                <div id="filter0_div" class="filter_div" style="display: none;"></div>
+                <div id="chart0_div" style="width: 100%; height: 80vh; float: left;"></div>
+            </div>
+        </div>  
+<script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart", "controls", "table"]});
+        google.setOnLoadCallback(drawVisualization);
+
+        //////////////////// data ///////////////////////////////////////////
+
+ 
+var colName0 =  ["c2","1.버스","2.지하철","3.승용차","4.택시","5.기타"] 
+var dataRaw0 =  [[2012,28.6339,12.1467,44.6669,7.3688,7.1837],[2013,28.1023,12.1782,45.1155,7.2937,7.3102],[2014,27.7143,12.4497,45.4238,7.1256,7.2865],[2015,26.992,12.512,45.936,7.088,7.472],[2016,23.9164,13.526,46.9105,6.5171,9.13],[2017,23.1968,13.7072,47.3564,6.4792,9.2604],[2018,22.8121,14.0452,47.3533,6.4462,9.3432],[2019,22.1604,13.9612,47.9464,6.3788,9.5532]] 
+var filterLabel = "c2";
+var webFolder = "trfc_md_shr_icn_bar";
+var chartTitle = "서울시 교통수단별 수단분담률";
+var colorSet = ["#6C584C","#A98467","#ADC178","#DDE5B6","#F0EAD2"];
+var fontSize0 = 10;
+var fontColor0 = "#999999";
+var bStacked = true;
+var barWidth = "50%";
+var aniChartType = "v";
+var axTitle = "(%)";
+var isTotal = "F";
+var max0 = 100;
+var min0 = 0; 
+        //////////////////// chart //////////////////////////////////////////
+
+
+
+        var fontName0 = "Noto Sans KR";
+        var textStyle0 = {
+            fontName: fontName0,
+            fontSize: fontSize0,
+            color: fontColor0
+        };
+        var textStyleLegend = {
+            fontName: fontName0,
+            fontSize: 12,
+            color: "#404c6a"
+        };
+
+
+
+        var dataArr0 = [];
+        dataArr0.push(colName0);
+        for (var i in dataRaw0) {
+            dataArr0.push(dataRaw0[i]);
+        }
+
+
+        if (isTotal == "T"){
+            var dataArr1a = [];
+            dataArr1a.push(colName1a);
+            for (var i in dataRaw1a) {
+                dataArr1a.push(dataRaw1a[i]);
+            }
+            var dataArr2a = [];
+            dataArr2a.push(colName2a);
+            for (var i in dataRaw2a) {
+                dataArr2a.push(dataRaw2a[i]);
+            }
+        }
+
+
+
+        function drawVisualization() {
+            drawChartRegion(dataArr0, min0, max0);
+
+        }
+
+        function drawChartRegion(regionData, amin, amax) {
+            var yearPattern = "####";
+            var formatNumber = new google.visualization.NumberFormat({
+                pattern: yearPattern
+            });
+
+
+
+            var data = google.visualization.arrayToDataTable(regionData);
+
+
+            formatNumber.format(data, 0);
+
+            var dashboard0 = new google.visualization.Dashboard(document.getElementById("dashboard0_div"));
+
+            var options0 = {};
+            var mChartType = "";
+            if (aniChartType == "v"){
+                options0 = {
+                    chartArea: {
+                        width: "85%",
+                        height: "90%"
+                    },
+                    colors: colorSet,
+                    focusTarget : "category",
+                    bar: {
+                            groupWidth: barWidth,
+                        },
+                    hAxis: {
+                        textStyle: textStyle0,
+                        format: "####",
+                    },
+                    vAxis: {
+                        viewWindow: {
+                            max: max0,
+                            min: min0
+                        },
+                        textStyle: textStyle0,
+                        title: axTitle,
+                        titleTextStyle: textStyleLegend,
+                        format: "####.##",
+                    },
+                    legend: {
+                        textStyle: textStyleLegend,
+                        position: "top"
+                    },
+                    tooltip: {
+                        textStyle: textStyleLegend
+                    },
+
+                    animation: {
+                        duration: 500,
+                        easing: "out"
+                    },
+                    isStacked: bStacked,
+
+                };
+                mChartType = "ColumnChart";
+
+            }else{
+
+                options0 = {
+                    chartArea: {
+                        width: "85%",
+                        height: "90%"
+                    },
+                    colors: colorSet,
+                    focusTarget : "category",
+                    bar: {
+                            groupWidth: barWidth,
+                        },
+                    hAxis: {
+                        viewWindow: {
+                            max: max0,
+                            min: min0
+                        },
+                        textStyle: textStyle0,
+                        title: axTitle,
+                        titleTextStyle: textStyleLegend,
+                        format: "####.##",
+                    },
+                    vAxis: {
+                        textStyle: textStyle0,
+                        format: "####",
+                    },
+                    legend: {
+                        textStyle: textStyleLegend,
+                        position: "top"
+                    },
+                    tooltip: {
+                        textStyle: textStyleLegend
+                    },
+
+                    animation: {
+                        duration: 500,
+                        easing: "out"
+                    },
+                    isStacked: bStacked,
+
+                };
+                mChartType = "BarChart";
+
+            }
+
+            var chart0 = new google.visualization.ChartWrapper({
+                "chartType": mChartType,
+                "containerId": "chart0_div",
+                "options": options0
+            });
+            var table0 = new google.visualization.ChartWrapper({
+                "chartType": "Table",
+                "containerId": "table0_div",
+            });
+
+            var filter0 = new google.visualization.ControlWrapper({
+                "controlType": "CategoryFilter",
+                "containerId": "filter0_div",
+                "options": {
+                    "filterColumnLabel": filterLabel
+                }
+            })
+
+
+
+            //////////////////////////////////////////////////
+            //////////////////// series //////////////////////
+            //////////////////////////////////////////////////
+            var view = new google.visualization.DataView(data);
+            //legend click
+            var colu = [];
+            var series = {};
+            for (var i = 0; i < data.getNumberOfColumns(); i++) {
+                colu.push(i);
+                if (i > 0) {
+                    series[i - 1] = {};
+                }
+            }
+
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+            //////////////////////////////////////////////////
+            dashboard0.bind(filter0, [chart0]);
+            dashboard0.draw(view);
+
+
+
+        }
+
+    </script>
+ 
+</body>
+</html>
+
+
